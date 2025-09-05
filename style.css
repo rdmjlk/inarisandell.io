@@ -285,7 +285,7 @@ td {
 /* Makes project page's columns into a one row on mobile */
 @media screen and (max-width: 800px) {
   #text_block {
-    margin-top: 360px;
+    margin-top: 290px;
     padding: 10px;
   }
 

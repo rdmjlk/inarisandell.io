@@ -206,7 +206,7 @@ hr {
 /* Text aligment for all ofthe text in the cite. Centers everything based on the width and heigh of thepage with additional padding. */
 
 #text_block {
-  top: 20vh;
+  top: 25vh;
   max-width: 800px;
   margin-top: 8vh;
   padding: 100px;

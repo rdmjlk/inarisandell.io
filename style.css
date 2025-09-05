@@ -1,0 +1,301 @@
+/* This section changes all of the styling on the site. Please read the comments to udnerstand which section you are editing. */
+
+/* Whole site specific stylng */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif; /* Font style used across site */
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  z-index: -9999;
+}
+
+/* Homepaghe Background Image */
+
+.bg_home {
+  background-image: url(media/inari_sandell_home.gif); /* ATTENTION! Change this linking if you want to change the BG image */
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  position: relative;
+}
+
+/* Hides all scrollbars */
+
+:root::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* TEXT STYLIING (Colours, Size, Justifying, Line-Height */
+
+/* Paragraph */
+
+p {
+  color: rgb(255, 0, 0);
+  font-size: 10pt;
+  text-justify: inter-character;
+  line-height: 12pt;
+}
+
+h1 {
+  color: rgb(255, 0, 0);
+  font-size: 10pt;
+  text-align: justify;
+  text-justify: inter-character;
+}
+
+ul {
+  position: absolute;
+  top: 45%;
+  right: 15%;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* Nav bar + Contact text */
+
+info {
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 20px;
+}
+
+info_desc p {
+  color: rgb(255, 0, 0);
+  font-size: 8pt;
+  text-align: justify;
+  padding-top: 20px;
+}
+
+/* Links */
+
+a:link {
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 10pt;
+}
+
+a:visited {
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 10pt;
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 10pt;
+}
+
+a:active {
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 10pt;
+}
+
+/* Image styling */
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Project hero image */
+.column_hero {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 60%;
+  padding: 0 4px;
+  margin-top: 10vh;
+}
+
+/* Fill the entire screen */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 100%;
+  padding: 0 4px;
+  margin-bottom: 1vh;
+}
+
+/* Create four equal columns that sits next to each other */
+.column_highlight {
+  -ms-flex: 25%; /* IE10 */
+  flex: 50%;
+  max-width: 45%;
+  padding: 0 4px;
+  margin: 15vh;
+}
+
+/* Create four equal columns that sits next to each other */
+.column_duo {
+  float: left;
+  width: 50%;
+  padding: 0 4px;
+}
+
+.column_bottom {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  width: 100%;
+}
+
+/* Horizontal line used between text*/
+
+hr {
+  border-top: 1px solid red;
+}
+
+/* Horizontal line used between text*/
+
+/* TEXT ALIGMNET */
+
+/* Nav bars text aligments */
+
+#nav_home {
+  position: fixed;
+  top: 45vh;
+  z-index: 1;
+  font-weight: bold;
+}
+
+#nav_action {
+  position: fixed;
+  right: 0px;
+  top: 45vh;
+  z-index: 1;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+/* Text aligment for all ofthe text in the cite. Centers everything based on the width and heigh of thepage with additional padding. */
+
+#text_block {
+  top: 30vh;
+  max-width: 800px;
+  margin-top: 10vh;
+  padding: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#text_desc {
+  max-width: 900px;
+  padding: 0px;
+  margin-left: 10px;
+  font-size: 8pt;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#next_page {
+  font-size: 8pt;
+  line-height: 1.5;
+  padding-bottom: 50px;
+  text-align: right;
+}
+
+/* Nav bars text aligments */
+
+#bg_feature {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#info_press {
+  font-style: italic;
+}
+
+#press_list {
+  font-size: 10pt;
+  color: rgb(255, 0, 0);
+}
+
+/* Nav bars text aligments */
+
+#landing_page {
+  position: fixed;
+  top: 30px;
+  margin-left: 10px;
+  z-index: 0;
+}
+
+/* Nav bars text aligments */
+
+#link-list {
+  line-height: 20px;
+  margin-left: 10px;
+  font-size: 10pt;
+}
+
+/* Nav bars text aligments */
+
+::selection {
+  color: rgb(255, 255, 255);
+  background: rgb(255, 0, 0);
+}
+
+/* Frontpage cells for exhibitions */
+
+table,
+th,
+td {
+  margin: 10px;
+  padding-right: 10px;
+  vertical-align: top;
+  border: 0px solid;
+}
+
+/* Makes project page's columns into a one row on mobile */
+@media screen and (max-width: 800px) {
+  #text_block {
+    margin-top: 360px;
+    padding: 10px;
+  }
+
+  .column_highlight {
+    min-width: 85%;
+    flex: 100%;
+  }
+
+  .column_duo {
+    width: 100%;
+    padding: 0 4px;
+  }
+}

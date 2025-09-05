@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="transition.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/media/inari.ico">
+
+<title>Work | Inari Sandell</title>
+
+</head>
+
+<!-- Transition -->
+<div class="transition transition-1 is-active"></div>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Multidisciplinary visual artist based in Helsinki">
+
+<body>
+
+ <!-- Nav bar -->
+ <div>
+    <div id= "nav_home">
+         <info>
+             <a href="index.html">Inari Sandell</a>
+        </info>
+    </div>
+
+    <div id= "nav_action">
+    <info>
+         <a href="work.html">Work</a>
+         <a href="info.html" style="margin-left:10px">Info</a>
+     </info>
+    </div>
+</div>
+
+<div class="center">
+    <ul>
+        <li data-bg="media/inari_sandell_home.gif"><a href="/works/on_butterfly.html">On Butterly Logic</a></li>
+        <li data-bg="media/24_butterfly/1_preview_DSF7785.jpg"><a href="/works/butterfly_logic.html">Butterfly Logic</a></li>
+        <li data-bg="media/23_empathy/01_preview_empathy.jpg"><a href="/works/empathy_muscle.html">Empathy Muscle</a></li>
+        <li data-bg="media/23_person/0_preview_DSF6022.jpg"><a href="/works/a_matter_of_contructing_person.html">A Matter of Constructing a Person</a></li>
+        <li data-bg="media/22_softspeed/preview_webDSCF3866.jpg"><a href="/works/softspeed.html">Softspeed</a></li>
+        <li data-bg="media/21_23_burnout/00_preview_DSCF0427.jpg"><a href="/works/burnout.html">Burnout</a></li>
+        <li data-bg="media/21_blanket/1_preview_MG_6406.jpg"><a href="/works/gravity_blanket.html">Gravity Blanket</a></li>
+        <li data-bg="/media/19_purpuritanssi/PURPURITANSSI_015.jpg"><a href="/works/purpuritanssi.html">Purpuritanssi</a></li>
+        <li data-bg="media/16_life/1_lifebelike_MG_3233.jpg"><a href="/works/life_be_like.html">Life Be Like</a></li>
+    </ul>
+
+</div>
+
+
+<!-- Changes background image based on the data-bg on the list. DON'T EDIT -->
+<script>
+    const body = document.querySelector("body");
+    const li = document.querySelectorAll("li");
+
+    li.forEach(el => {
+        el.addEventListener("mouseover",() => {
+            let bg = el.getAttribute("data-bg");
+            body.style.background = `url(${bg})no-repeat
+            center / cover`;
+        });
+    });
+</script>
+
+</body>
+    <!-- Transition between pages-->
+    <script src="main.js"></script>
+</html>
